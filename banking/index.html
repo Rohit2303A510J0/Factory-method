@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Interactive Banking App</title>
+  <link rel="stylesheet" href="../common/base.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🏦 Banking App – Factory Method</h1>
+  <p>Create accounts, deposit/withdraw, and view transactions dynamically.</p>
+</header>
+
+<main>
+  <!-- Create Account -->
+  <section>
+    <h2>Create Account</h2>
+    <form id="create-form">
+      <label for="type">Account Type:</label>
+      <select id="type" name="type">
+        <option value="savings">Savings Account</option>
+        <option value="current">Current Account</option>
+        <option value="loan">Loan Account</option>
+      </select>
+
+      <div class="grid" id="dynamic-fields"></div>
+      <button type="submit">➕ Add Account</button>
+    </form>
+  </section>
+
+  <section class="flex-container">
+    <!-- Accounts List -->
+    <div id="account-list" class="grid"></div>
+
+    <!-- Transaction Log -->
+    <div id="transaction-log" class="card">
+      <h3>Transactions</h3>
+      <div id="transactions"></div>
+    </div>
+  </section>
+
+  <!-- Factory Call -->
+  <section>
+    <h2>Factory Call</h2>
+    <details>
+      <summary>Show Code</summary>
+      <pre id="code-snippet" class="code"></pre>
+    </details>
+  </section>
+</main>
+
+<footer style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+  <p>Factory Method keeps object creation centralized ✨</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
