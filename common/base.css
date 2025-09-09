@@ -1,0 +1,92 @@
+/* Dark Theme Base Styles */
+:root {
+  --bg-color: #121212;
+  --card-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --accent-color: #4da6ff;
+  --accent-hover: #1e90ff;
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: var(--accent-hover);
+}
+
+.card {
+  background: var(--card-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+pre, code {
+  background: #2a2a2a;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav ul {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+nav li a {
+  display: block;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background: var(--card-color);
+  transition: background 0.2s;
+}
+nav li a:hover {
+  background: #2a2a2a;
+}
