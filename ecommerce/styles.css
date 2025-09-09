@@ -1,0 +1,35 @@
+.flex-container {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Give more space to products, less to cart */
+#product-list {
+  flex: 3;  /* 3 parts */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+#cart {
+  flex: 1;  /* 1 part */
+  min-width: 250px;
+  max-height: 80vh; /* prevent too tall cart */
+  overflow-y: auto;  /* scroll if too many items */
+}
+
+.card.electronics { border-left: 4px solid #4da6ff; }
+.card.clothing { border-left: 4px solid #4dff88; }
+.card.books { border-left: 4px solid #ff884d; }
+
+form select, form input, form button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+form input::placeholder {
+  color: #888;
+}

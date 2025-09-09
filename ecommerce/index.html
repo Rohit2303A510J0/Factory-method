@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Interactive E-commerce App</title>
+  <link rel="stylesheet" href="../common/base.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🛒 E-commerce App – Factory Method</h1>
+  <p>Create products, add to cart, and view total dynamically.</p>
+</header>
+
+<main>
+  <!-- Create Product -->
+  <section>
+    <h2>Create Product</h2>
+    <form id="create-form">
+      <label for="type">Product Category:</label>
+      <select id="type" name="type">
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+      </select>
+
+      <div class="grid" id="dynamic-fields"></div>
+      <button type="submit">➕ Add Product</button>
+    </form>
+  </section>
+
+  <!-- Products and Cart -->
+  <section class="flex-container">
+    <div id="product-list" class="grid"></div>
+
+    <div id="cart" class="card">
+      <h3>🛒 Cart</h3>
+      <div id="cart-items"></div>
+      <p id="total"></p>
+    </div>
+  </section>
+
+  <!-- Factory Call -->
+  <section>
+    <h2>Factory Call</h2>
+    <details>
+      <summary>Show Code</summary>
+      <pre id="code-snippet" class="code"></pre>
+    </details>
+  </section>
+</main>
+
+<footer style="margin-top:2rem; font-size:0.9rem; opacity:0.7;">
+  <p>Factory Method centralizes object creation ✨</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
