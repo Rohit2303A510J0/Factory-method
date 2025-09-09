@@ -1,0 +1,20 @@
+/* Extra dark theme tweaks */
+form {
+  margin: 1rem 0;
+}
+
+form select, form input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+form input::placeholder {
+  color: #888;
+}
+
+.card.customer { border-left: 4px solid #4da6ff; }
+.card.delivery { border-left: 4px solid #4dff88; }
+.card.restaurant { border-left: 4px solid #ff884d; }

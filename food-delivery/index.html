@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Factory Method – Food Delivery</title>
+  <link rel="stylesheet" href="../common/base.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🍕 Food Delivery App – Factory Method</h1>
+    <p>
+      This demo shows the <strong>Factory Method</strong> pattern by letting you
+      create Customers, Delivery Partners, and Restaurants dynamically.
+    </p>
+  </header>
+
+  <main>
+    <!-- Create Users -->
+    <section>
+      <h2>Create User</h2>
+      <form id="create-form">
+        <label for="type">User Type:</label>
+        <select id="type" name="type">
+          <option value="customer">Customer</option>
+          <option value="delivery">Delivery Partner</option>
+          <option value="restaurant">Restaurant</option>
+        </select>
+
+        <div class="grid" id="dynamic-fields"></div>
+        <button type="submit">➕ Add</button>
+      </form>
+    </section>
+
+    <!-- List Users -->
+    <section>
+      <h2>Users</h2>
+      <div id="user-list" class="grid"></div>
+    </section>
+
+    <!-- Simulation -->
+    <section>
+      <h2>Simulate Order</h2>
+      <form id="simulate-form" class="grid">
+        <select id="select-customer"></select>
+        <select id="select-restaurant"></select>
+        <select id="select-delivery"></select>
+        <button type="submit">🎲 Simulate</button>
+      </form>
+      <div id="simulation" class="card"></div>
+    </section>
+
+    <!-- Factory Code -->
+    <section>
+      <h2>Factory Call</h2>
+      <details>
+        <summary>Show Code</summary>
+        <pre id="code-snippet" class="code"></pre>
+      </details>
+    </section>
+  </main>
+
+  <footer style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+    <p>Factory Method keeps object creation centralized and clean ✨</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
