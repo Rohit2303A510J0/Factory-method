@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ride-Hailing App</title>
+  <link rel="stylesheet" href="../common/base.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🚖 Ride-Hailing App – Factory Method</h1>
+  <p>Create rides, book them, and simulate a ride dynamically.</p>
+</header>
+
+<main>
+  <!-- Create Ride -->
+  <section>
+    <h2>Create Ride</h2>
+    <form id="create-form">
+      <label for="type">Ride Type:</label>
+      <select id="type" name="type">
+        <option value="mini">Mini</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="auto">Auto</option>
+      </select>
+
+      <div class="grid" id="dynamic-fields"></div>
+      <button type="submit">➕ Add Ride</button>
+    </form>
+  </section>
+
+  <section class="flex-container">
+    <div id="ride-list" class="grid"></div>
+
+    <div id="booking" class="card">
+      <h3>🚦 Booking</h3>
+      <div id="booking-info">No ride booked yet.</div>
+    </div>
+  </section>
+
+  <!-- Factory Call -->
+  <section>
+    <h2>Factory Call</h2>
+    <details>
+      <summary>Show Code</summary>
+      <pre id="code-snippet" class="code"></pre>
+    </details>
+  </section>
+</main>
+
+<footer style="margin-top:2rem; font-size:0.9rem; opacity:0.7;">
+  <p>Factory Method centralizes ride creation ✨</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

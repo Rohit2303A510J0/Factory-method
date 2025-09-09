@@ -1,0 +1,31 @@
+.flex-container {
+  display: flex;
+  gap: 2rem;
+}
+
+#ride-list {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+#booking {
+  flex: 1;
+  min-width: 250px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.card.mini { border-left: 4px solid #4da6ff; }
+.card.sedan { border-left: 4px solid #4dff88; }
+.card.suv { border-left: 4px solid #ff884d; }
+.card.auto { border-left: 4px solid #ffa64d; }
+
+form select, form input, form button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
